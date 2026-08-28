@@ -1,0 +1,11 @@
+{
+  "name": "arogya-link",
+  "private": true,
+  "version": "0.1.0",
+  "workspaces": ["apps/*"],
+  "scripts": {
+    "dev:kiosk": "npm run dev --workspace=@arogya-link/patient-kiosk",
+    "dev:doctor": "npm run dev --workspace=@arogya-link/doctor-dashboard",
+    "build": "npm run build --workspaces"
+  }
+}

@@ -1,42 +1,6 @@
-# Arogya Link — .gitignore
-
-# Resources — Excluded from Git per user directive
-resources/
-scratch/
-
-# Environment Files — NEVER commit secrets to GitHub
+node_modules
+dist
 .env
-.env*
-*.env
-*.env.*
-backend/.env
-apps/*/.env
-apps/*/.env.local
-apps/*/.env.*
-
-# Python
-__pycache__/
-*.pyc
-*.pyo
-.venv/
-venv/
-*.egg-info/
-dist/
-*.db
-.pytest_cache/
-
-# Node & Build Outputs
-node_modules/
-dist/
-apps/*/node_modules/
-apps/*/dist/
-apps/*/.vite/
-
-# Alembic & SQLite
-backend/arogya_link.db
-
-# IDE & OS
-.vscode/
-.idea/
+.env.local
 .DS_Store
-Thumbs.db
+coverage
